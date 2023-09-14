@@ -14,6 +14,17 @@
 		4AD15AAA2AB330FE0063EF62 /* merchantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD15AA92AB330FE0063EF62 /* merchantTests.swift */; };
 		4AD15AB42AB330FE0063EF62 /* merchantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD15AB32AB330FE0063EF62 /* merchantUITests.swift */; };
 		4AD15AB62AB330FE0063EF62 /* merchantUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD15AB52AB330FE0063EF62 /* merchantUITestsLaunchTests.swift */; };
+		4AD15AC32AB3457D0063EF62 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD15AC22AB3457D0063EF62 /* Food.swift */; };
+		4AD15AC52AB3515B0063EF62 /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD15AC42AB3515B0063EF62 /* FoodViewModel.swift */; };
+		4AD15AC82AB3715B0063EF62 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AD15AC72AB3715B0063EF62 /* Montserrat-ExtraLight.ttf */; };
+		4AD15AC92AB3715B0063EF62 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AD15AC72AB3715B0063EF62 /* Montserrat-ExtraLight.ttf */; };
+		4AD15ACA2AB3715B0063EF62 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AD15AC72AB3715B0063EF62 /* Montserrat-ExtraLight.ttf */; };
+		4AD15ACD2AB376A10063EF62 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD15ACC2AB376A10063EF62 /* OrderView.swift */; };
+		4AD15ACE2AB376A10063EF62 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD15ACC2AB376A10063EF62 /* OrderView.swift */; };
+		4AD15ACF2AB376A10063EF62 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD15ACC2AB376A10063EF62 /* OrderView.swift */; };
+		4AD15AD12AB376B00063EF62 /* CouponView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD15AD02AB376B00063EF62 /* CouponView.swift */; };
+		4AD15AD22AB376B00063EF62 /* CouponView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD15AD02AB376B00063EF62 /* CouponView.swift */; };
+		4AD15AD32AB376B00063EF62 /* CouponView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD15AD02AB376B00063EF62 /* CouponView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +55,12 @@
 		4AD15AAF2AB330FE0063EF62 /* merchantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = merchantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD15AB32AB330FE0063EF62 /* merchantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merchantUITests.swift; sourceTree = "<group>"; };
 		4AD15AB52AB330FE0063EF62 /* merchantUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merchantUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4AD15AC22AB3457D0063EF62 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		4AD15AC42AB3515B0063EF62 /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
+		4AD15AC72AB3715B0063EF62 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		4AD15ACB2AB371810063EF62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4AD15ACC2AB376A10063EF62 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		4AD15AD02AB376B00063EF62 /* CouponView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +111,14 @@
 		4AD15A972AB330FD0063EF62 /* merchant */ = {
 			isa = PBXGroup;
 			children = (
+				4AD15ACB2AB371810063EF62 /* Info.plist */,
+				4AD15AC62AB371490063EF62 /* Font */,
 				4AD15A982AB330FD0063EF62 /* merchantApp.swift */,
+				4AD15AC42AB3515B0063EF62 /* FoodViewModel.swift */,
 				4AD15A9A2AB330FD0063EF62 /* ContentView.swift */,
+				4AD15AD02AB376B00063EF62 /* CouponView.swift */,
+				4AD15ACC2AB376A10063EF62 /* OrderView.swift */,
+				4AD15AC22AB3457D0063EF62 /* Food.swift */,
 				4AD15A9C2AB330FE0063EF62 /* Assets.xcassets */,
 				4AD15A9E2AB330FE0063EF62 /* Preview Content */,
 			);
@@ -125,6 +148,14 @@
 				4AD15AB52AB330FE0063EF62 /* merchantUITestsLaunchTests.swift */,
 			);
 			path = merchantUITests;
+			sourceTree = "<group>";
+		};
+		4AD15AC62AB371490063EF62 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				4AD15AC72AB3715B0063EF62 /* Montserrat-ExtraLight.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AD15AA02AB330FE0063EF62 /* Preview Assets.xcassets in Resources */,
+				4AD15AC82AB3715B0063EF62 /* Montserrat-ExtraLight.ttf in Resources */,
 				4AD15A9D2AB330FE0063EF62 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AD15AC92AB3715B0063EF62 /* Montserrat-ExtraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AD15ACA2AB3715B0063EF62 /* Montserrat-ExtraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +291,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AD15AD12AB376B00063EF62 /* CouponView.swift in Sources */,
 				4AD15A9B2AB330FD0063EF62 /* ContentView.swift in Sources */,
 				4AD15A992AB330FD0063EF62 /* merchantApp.swift in Sources */,
+				4AD15AC52AB3515B0063EF62 /* FoodViewModel.swift in Sources */,
+				4AD15AC32AB3457D0063EF62 /* Food.swift in Sources */,
+				4AD15ACD2AB376A10063EF62 /* OrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +304,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AD15AD22AB376B00063EF62 /* CouponView.swift in Sources */,
 				4AD15AAA2AB330FE0063EF62 /* merchantTests.swift in Sources */,
+				4AD15ACE2AB376A10063EF62 /* OrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +314,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AD15ACF2AB376A10063EF62 /* OrderView.swift in Sources */,
 				4AD15AB62AB330FE0063EF62 /* merchantUITestsLaunchTests.swift in Sources */,
+				4AD15AD32AB376B00063EF62 /* CouponView.swift in Sources */,
 				4AD15AB42AB330FE0063EF62 /* merchantUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +461,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"merchant/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = merchant/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,6 +490,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"merchant/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = merchant/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -8,14 +8,104 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var foodModel = FoodViewModel()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack{
+            ZStack{
+                Color("background")
+                VStack{
+                    HStack() {
+                        Image(systemName: "fork.knife.circle.fill")
+                            .resizable()
+                            .frame(width: 75,height: 75)
+                        Text("Store name")
+                            .fontWeight(.bold)
+                        Spacer()
+                    }
+                    .frame(maxWidth: 350)
+                    .padding(.bottom)
+                    HStack{
+                        Text("Order")
+                            .padding(.leading)
+                            .fontWeight(.bold)
+                        Spacer()
+                        Image(systemName: "arrow.right.circle")
+                            .foregroundColor(Color("button"))
+                            .frame(width: 50,height: 50)
+                    }
+                    .frame(height: 50)
+                    .overlay(
+                            RoundedRectangle(cornerRadius: 16)
+                                .stroke(Color("components"), lineWidth: 3)
+                        )
+                    .frame(maxWidth: 350)
+                    .padding(.bottom,10)
+                    HStack{
+                        Text("Discount Code")
+                            .padding(.leading)
+                            .fontWeight(.bold)
+                        Spacer()
+                        Image(systemName: "arrow.right.circle")
+                            .foregroundColor(Color("button"))
+                            .frame(width: 50,height: 50)
+                    }
+                    .frame(height: 50)
+                    .overlay(
+                            RoundedRectangle(cornerRadius: 16)
+                                .stroke(Color("components"), lineWidth: 3)
+                        )
+                    .frame(maxWidth: 350)
+                    HStack{
+                        Text("Food")
+                            .fontWeight(.bold)
+                        Spacer()
+                        Text("Add new food")
+                            .foregroundColor(Color("components"))
+                            .fontWeight(.bold)
+                    }
+                    .frame(height: 50)
+                    .frame(maxWidth: 350)
+                    ForEach(foodModel.foods) { food in
+                        HStack{
+                            food.imageName
+                                .resizable()
+                                .aspectRatio(contentMode: .fit
+                                )
+                                .frame(width:100)
+                            VStack(alignment: .leading){
+                                Text(food.name)
+                                    .font(.system(size:20))
+                                Text(food.description)
+                                    .font(.system(size:12))
+                                  
+                            }
+                            Spacer()
+                            VStack(alignment: .trailing){
+                                Text("\(food.price)")
+                                    .fontWeight(.bold)
+                                    .font(.system(size:20))
+                                Text(food.category)
+                                    .font(.system(size:12))
+                               
+                            }
+                        }
+                        .frame(height : 80)
+                        .frame(maxWidth: 350)
+                        Divider()
+                         .frame(height: 1)
+                         .background(Color("components"))
+                         .frame(maxWidth: 350)
+                      
+                        
+                    }
+                }
+            }
+            .foregroundStyle(Color("text"))
+            .edgesIgnoringSafeArea(.all)
+            
         }
-        .padding()
+       
+
     }
 }
 
