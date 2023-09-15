@@ -25,6 +25,7 @@
 		4AD15AD12AB376B00063EF62 /* CouponView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD15AD02AB376B00063EF62 /* CouponView.swift */; };
 		4AD15AD22AB376B00063EF62 /* CouponView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD15AD02AB376B00063EF62 /* CouponView.swift */; };
 		4AD15AD32AB376B00063EF62 /* CouponView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD15AD02AB376B00063EF62 /* CouponView.swift */; };
+		F4ABBFEF2AB4430F003FE35C /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ABBFEE2AB4430F003FE35C /* AddFoodView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +59,9 @@
 		4AD15AC22AB3457D0063EF62 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		4AD15AC42AB3515B0063EF62 /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
 		4AD15AC72AB3715B0063EF62 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
-		4AD15ACB2AB371810063EF62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4AD15ACC2AB376A10063EF62 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		4AD15AD02AB376B00063EF62 /* CouponView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponView.swift; sourceTree = "<group>"; };
+		F4ABBFEE2AB4430F003FE35C /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +112,6 @@
 		4AD15A972AB330FD0063EF62 /* merchant */ = {
 			isa = PBXGroup;
 			children = (
-				4AD15ACB2AB371810063EF62 /* Info.plist */,
 				4AD15AC62AB371490063EF62 /* Font */,
 				4AD15A982AB330FD0063EF62 /* merchantApp.swift */,
 				4AD15AC42AB3515B0063EF62 /* FoodViewModel.swift */,
@@ -121,6 +121,7 @@
 				4AD15AC22AB3457D0063EF62 /* Food.swift */,
 				4AD15A9C2AB330FE0063EF62 /* Assets.xcassets */,
 				4AD15A9E2AB330FE0063EF62 /* Preview Content */,
+				F4ABBFEE2AB4430F003FE35C /* AddFoodView.swift */,
 			);
 			path = merchant;
 			sourceTree = "<group>";
@@ -297,6 +298,7 @@
 				4AD15AC52AB3515B0063EF62 /* FoodViewModel.swift in Sources */,
 				4AD15AC32AB3457D0063EF62 /* Food.swift in Sources */,
 				4AD15ACD2AB376A10063EF62 /* OrderView.swift in Sources */,
+				F4ABBFEF2AB4430F003FE35C /* AddFoodView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

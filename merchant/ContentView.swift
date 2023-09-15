@@ -15,23 +15,28 @@ struct ContentView: View {
                 Color("background")
                 VStack{
                     HStack() {
-                        Image(systemName: "fork.knife.circle.fill")
+                        Image("store")
                             .resizable()
                             .frame(width: 75,height: 75)
-                        Text("Store name")
+                        Text("McDonald")
                             .fontWeight(.bold)
                         Spacer()
                     }
                     .frame(maxWidth: 350)
                     .padding(.bottom)
                     HStack{
-                        Text("Order")
-                            .padding(.leading)
-                            .fontWeight(.bold)
-                        Spacer()
-                        Image(systemName: "arrow.right.circle")
-                            .foregroundColor(Color("button"))
-                            .frame(width: 50,height: 50)
+                        NavigationLink {
+                            // destination view to navigation to
+                            OrderView()
+                        } label: {
+                            Text("Order")
+                                .padding(.leading)
+                                .fontWeight(.bold)
+                            Spacer()
+                            Image(systemName: "arrow.right.circle")
+                                .foregroundColor(Color("button"))
+                                .frame(width: 50,height: 50)
+                        }
                     }
                     .frame(height: 50)
                     .overlay(
@@ -41,13 +46,18 @@ struct ContentView: View {
                     .frame(maxWidth: 350)
                     .padding(.bottom,10)
                     HStack{
-                        Text("Discount Code")
-                            .padding(.leading)
-                            .fontWeight(.bold)
-                        Spacer()
-                        Image(systemName: "arrow.right.circle")
-                            .foregroundColor(Color("button"))
-                            .frame(width: 50,height: 50)
+                        NavigationLink {
+                            // destination view to navigation to
+                            CouponView()
+                        } label: {
+                            Text("Coupon")
+                                .padding(.leading)
+                                .fontWeight(.bold)
+                            Spacer()
+                            Image(systemName: "arrow.right.circle")
+                                .foregroundColor(Color("button"))
+                                .frame(width: 50,height: 50)
+                        }
                     }
                     .frame(height: 50)
                     .overlay(
@@ -55,13 +65,14 @@ struct ContentView: View {
                                 .stroke(Color("components"), lineWidth: 3)
                         )
                     .frame(maxWidth: 350)
+                    .padding(.bottom,10)
                     HStack{
                         Text("Food")
                             .fontWeight(.bold)
                         Spacer()
-                        Text("Add new food")
-                            .foregroundColor(Color("button"))
-                            .fontWeight(.bold)
+                        NavigationLink(destination: AddFoodView(), label: {Text("Add new food")
+                                .foregroundColor(Color("button"))
+                                .fontWeight(.bold)})
                     }
                     .frame(height: 50)
                     .frame(maxWidth: 350)

@@ -17,8 +17,8 @@ struct CouponView: View {
                         Text("Coupon")
                             .fontWeight(.bold)
                         Spacer()
-                        Text("Add new food")
-                            .foregroundColor(Color("components"))
+                        Text("Add new coupon")
+                            .foregroundColor(Color("button"))
                             .fontWeight(.bold)
                     }
                     .frame(height: 50)
