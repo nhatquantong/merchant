@@ -60,7 +60,7 @@ struct ContentView: View {
                             .fontWeight(.bold)
                         Spacer()
                         Text("Add new food")
-                            .foregroundColor(Color("components"))
+                            .foregroundColor(Color("button"))
                             .fontWeight(.bold)
                     }
                     .frame(height: 50)
